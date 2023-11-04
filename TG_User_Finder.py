@@ -1,8 +1,6 @@
 # anon unknown never known ### hidden hacker X
 #import threading
 
-pip3 install telethon:
-
 from telethon import TelegramClient, events, sync
 from telethon.tl.types import InputPhoneContact
 from telethon import functions, types
@@ -40,8 +38,8 @@ def list_checker():
             pass
 
 if __name__ == '__main__':
-    phone = input(" 14015756255:")
-    client = TelegramClient(phone,int(open("29506233","r").read().strip(" \n ")),str(open("c1126215187ebo73y11ac825ficdf7e7b62","r").read().strip(" \n ")))
+    phone = input(" enter num:")
+    client = TelegramClient(phone,int(open("api_id.txt","r").read().strip(" \n ")),str(open("api_hash.txt","r").read().strip(" \n ")))
     client.connect()
     if not client.is_user_authorized():
         client.send_code_request(phone)
