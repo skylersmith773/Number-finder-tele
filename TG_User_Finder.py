@@ -39,7 +39,7 @@ def list_checker():
 
 if __name__ == '__main__':
     phone = input(" 14015756255:")
-    client = TelegramClient(phone,int(open("api_id.txt","r").read().strip(" \n ")),str(open("api_hash.txt","r").read().strip(" \n ")))
+    client = TelegramClient(phone,int(open("29506233","r").read().strip(" \n ")),str(open("","r").read().strip(" \n ")))
     client.connect()
     if not client.is_user_authorized():
         client.send_code_request(phone)
